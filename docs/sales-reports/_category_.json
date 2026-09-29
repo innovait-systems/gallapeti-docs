@@ -1,0 +1,5 @@
+{
+  "label": "Sales & reports",
+  "position": 5,
+  "link": { "type": "generated-index", "description": "See past bills, today's sales, profit and reports." }
+}

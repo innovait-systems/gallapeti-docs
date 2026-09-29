@@ -1,0 +1,49 @@
+---
+title: Import items from Excel
+sidebar_position: 3
+description: Add or update hundreds of items at once using the Excel template.
+keywords: [excel, import, export, template, bulk, price list, xlsx, csv, google sheets]
+---
+
+import Screenshot from '@site/src/components/Screenshot';
+
+# Import items from Excel
+
+**When you'd use this:** to add your whole price list at once, or to change many prices together.
+
+## Steps
+
+1. Open **Items** and tap **Import / Export Excel**.
+
+2. Tap **Download template**. Save it to Google Drive, or send it to your own WhatsApp to open on a
+   computer.
+
+3. **Fill the template** in Excel or Google Sheets — one item per row. Delete the example rows first.
+   - **Item name** is required, plus **MRP** or **Selling price** (or both).
+   - Optional: **Cost price**, **Discount %**, **Unit**, **Category**, **GST %**, **Price includes GST**
+     (Yes/No), **Barcode**, **HSN**, **Stock**, **Favourite** (Yes/No).
+   - Leave a column blank to use your shop's default (unit, GST).
+   - The **How to fill** sheet in the file explains every column.
+
+4. Back in Galla Peti, tap **Choose Excel file** and pick your file (.xlsx, .xls or .csv).
+
+5. **Check the preview.** You'll see how many items are **New**, will **Update** existing items, or
+   **Need fixing** — each problem shows the Excel row number and what's wrong.
+
+   <Screenshot alt="Import preview: New, Update and Need fixing counts, and rows to fix with reasons." />
+
+6. Tap **Import N items**. Rows that need fixing are skipped — fix them in Excel and import again.
+
+## Update prices in bulk
+
+1. Tap **Export my items** — you get your full list in the same format.
+2. Change prices in Excel.
+3. Import it back. Items with the same **name or barcode** are updated instead of added twice.
+   (Turn off **Update items that already exist** before importing if you only want new items.)
+
+## Tips
+
+- A blank cell replaces the old value when updating — for example a blank **Stock** turns off
+  stock tracking for that item. Exported files have every column filled, so export → edit → import
+  is safe.
+- Starting over with a new season's list? **Items → Delete all items**, then import.

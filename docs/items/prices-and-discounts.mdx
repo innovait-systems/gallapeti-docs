@@ -1,0 +1,50 @@
+---
+title: Prices, MRP and discounts
+sidebar_position: 2
+description: How MRP, selling price and Discount % work together.
+keywords: [MRP, selling price, discount, offer, crackers, 80% off, cost price, profit]
+---
+
+# Prices, MRP and discounts
+
+**When you'd use this:** to understand what the customer pays for an item.
+
+## How the price is worked out
+
+| You enter | Customer pays | Example |
+|---|---|---|
+| **MRP** only | MRP | MRP ₹500 → **₹500** |
+| **MRP + Selling price** | Selling price | MRP ₹1,299, SP ₹799 → **₹799** |
+| **MRP + Selling price + Discount %** | Selling price less the discount | MRP ₹1,000, SP ₹800, 10% → **₹720** |
+| **MRP + Discount %** | MRP less the discount | MRP ₹1,800, 80% → **₹360** |
+| **Selling price** only (no MRP) | Selling price (less any discount) | SP ₹40, 25% → **₹30** |
+
+You need at least an MRP or a selling price. The selling price can't be more than the MRP.
+
+:::note[Discount on the selling price]
+When you enter both a selling price and a Discount %, the discount comes off the **selling price** —
+an extra offer on top of your price. In the example above, ₹720 is 28% below MRP, not 10%.
+:::
+
+## On the bill
+
+The item's rate prints first and the discount on its own line, so customers see the saving:
+
+```
+1000 Wala
+  1box x 1,800.00        1,800.00
+  Discount 80%          -1,440.00
+```
+
+At the bottom, **You saved ₹…** shows the total saving against MRP.
+
+## Change the discount for one bill
+
+The item's Discount % is added to the bill automatically. To change or remove it for just this
+bill, use **Discount** on the [bill review screen](../billing/review-bill.mdx).
+
+## Cost price and profit
+
+Add a **cost price** to an item to see profit in [reports](../sales-reports/reports.mdx). Profit is
+worked out on the price **before GST** (GST isn't your income), and each bill remembers the cost at
+the time of sale — changing a cost later doesn't change past profit.
