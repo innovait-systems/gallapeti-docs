@@ -2,7 +2,7 @@
 title: Make a bill
 sidebar_position: 1
 description: Add items to a bill by tapping, searching or scanning barcodes.
-keywords: [new sale, bill, invoice, barcode, quantity, loose items]
+keywords: [quick item, one-off item, new sale, bill, invoice, barcode, quantity, loose items, list view, grid, remove item, clear bill]
 ---
 
 import Screenshot from '@site/src/components/Screenshot';
@@ -18,14 +18,20 @@ import Screenshot from '@site/src/components/Screenshot';
    <Screenshot src="billing/new-sale.webp" alt="New Sale: search bar, category chips and the grid of items with prices." />
 
 2. **Add items** — any of these:
-   - **Tap an item** to add one. Tap again to add more. A badge shows how many are in the bill.
+   - **Tap an item** to add one. Tap again to add more. Items in the bill turn green and show
+     **−  2  +** — use **−** to reduce. At 1 it becomes a bin icon that removes the item (tap **Undo** if it was a mistake).
    - **Search** — type part of the name in **Search items**.
    - **Scan** — tap the barcode icon and point the camera at the barcode. Keep scanning to add more,
      then tap **Done**.
    - **Categories** — tap a chip like **Favourites** or **Sparklers** to show only those items.
+   - **Quick item** — for something not in your items (loose sugar, a one-off sale): tap the
+     **Quick item** chip, enter the price, and optionally a name, quantity, unit and GST. It's added
+     to this bill only, not to your item list. Searching for a name that doesn't exist also offers
+     **Sell "…" once (quick item)**.
 
 3. **Loose items or big quantities** — **press and hold** an item and type the quantity, for
-   example **1.25 kg** or **24** boxes.
+   example **1.25 kg** or **24** boxes. For loose items already in the bill, tap the quantity
+   (like **1.5 kg**) to change it, or tap **Remove from bill**.
 
 4. When everything is added, tap **Charge ₹…** at the bottom to take payment — see
    [Take payment](take-payment.mdx). To check the bill first or give a discount, tap **Review bill**
@@ -33,9 +39,13 @@ import Screenshot from '@site/src/components/Screenshot';
 
 ## Tips
 
+- **Grid or list:** tap the list icon next to **New bill** to see items as a list — handy when you
+  have many items or long names. Tap the grid icon to go back. Your phone remembers the choice.
+- **Start over:** tap **Clear** next to **New bill** to empty the bill. Tap **Undo** if you didn't mean to.
 - Items show their price after discount, with the MRP crossed out when there's an offer
   (for example ~~₹1,800~~ **80% off ₹360**).
-- An item that isn't in your list? Search for it and tap **Add "…" as new item**.
+- An item that isn't in your list? Search for it and tap **Add "…" as new item** to save it, or sell it
+  once as a quick item. Quick items count in sales reports, but not in profit (they have no cost price).
 
 ## Related
 
