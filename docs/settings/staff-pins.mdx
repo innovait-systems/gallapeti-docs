@@ -2,7 +2,7 @@
 title: Staff PINs
 sidebar_position: 3.5
 description: Give each person at the counter their own PIN, see who made each bill, and choose what staff can do.
-keywords: [staff, pin, cashier, helper, permission, lock, owner pin, recovery code, billed by, pro]
+keywords: [staff, pin, sign-in history, login history, locked out, unlock, cashier, helper, permission, lock, owner pin, recovery code, billed by, pro]
 ---
 
 # Staff PINs
@@ -22,8 +22,8 @@ in your hands. *Part of [Galla Peti Pro](galla-peti-pro.mdx).*
 ## Add staff
 
 1. **Settings → Staff & PINs → Add staff**.
-2. Enter their **name** (it's printed on bills as the cashier) and a **PIN** for them. Each person
-   needs a different PIN.
+2. Enter their **name** (it's printed on bills as the cashier) and a **PIN** for them. It must be
+   different from your owner PIN.
 3. Tick what else they can do:
 
    | Permission | What it allows |
@@ -45,9 +45,12 @@ their name.
 
 ## Every day
 
-- When the app opens, enter **your PIN**. Home greets you by name.
+- When the app opens, **tap your name**, then enter **your PIN**. The last person who signed in is
+  already picked — they just enter their PIN. Anyone else taps **Not you?** and picks their name.
+- **Owner:** tap **Owner? Sign in with owner PIN** at the bottom of the screen.
+- Home greets you by name.
 - **Changing person?** Tap the **lock** button on Home (or **Settings → Lock · switch person**) and
-  the next person enters their PIN.
+  the next person picks their name and enters their PIN.
 - The app asks for the PIN again after it has been in the background. Choose how soon in
   **Settings → Staff & PINs → Ask for the PIN again**: every time, after 5 or 30 minutes, or never.
 - Bills, credit notes and day-end summaries show **who made them** (*Cashier: Priya*).
@@ -55,14 +58,34 @@ their name.
 ## When staff need permission
 
 If a helper tries something they aren't allowed to do — a discount, a return, voiding a bill — the
-app asks for a PIN. **You (or anyone allowed) enter your PIN on their phone** and the action goes
-through once. Your PIN isn't saved for them.
+app asks for a PIN. The owner is picked first; tap another name if someone else allowed is there.
+**That person enters their PIN** and the action goes through once. The PIN isn't saved for the helper.
 
-After 5 wrong PINs the app waits 30 seconds before the next try.
+## Wrong PINs and locked-out staff
+
+- Wrong tries count for **that person only**.
+- After 5 wrong PINs in a row, they wait 30 seconds before the next try (longer each time).
+- **Staff are locked out after 10 wrong PINs.** Their name shows **Locked** until you unlock them:
+  - on the lock screen: tap their name → **Owner: unlock** → enter your owner PIN, or
+  - **Settings → Staff & PINs** → tap their name → **Unlock**. Setting a new PIN also unlocks them.
+- The owner is never locked out — only made to wait. If you've forgotten your PIN, use the recovery
+  code below.
+
+## Sign-in history
+
+**Settings → Staff & PINs → Sign-in history** (owner only) shows, day by day:
+- who **signed in** and when, and when the app was **locked** (by someone, or automatically),
+- **wrong PINs** and **lock-outs** (in red), and who **unlocked** whom,
+- who **allowed** what — for example *Ravi allowed Priya: Give a discount*.
+
+Tap a name at the top to see only that person. Choose how long to keep it under **Keep history for**:
+1 week, 1 month (the default), 2 months or 3 months. Older entries are removed automatically. The
+history is included in backups.
 
 ## Forgot the owner PIN?
 
-On the PIN screen tap **Forgot owner PIN?**, type your **recovery code**, and choose a new PIN.
+On the PIN screen tap **Owner? Sign in with owner PIN**, then **Forgot owner PIN?**, type your
+**recovery code**, and choose a new PIN.
 You'll get a **new recovery code** — write it down; the old one no longer works.
 
 Staff who forget their PIN: open **Settings → Staff & PINs**, tap their name and set a new PIN.
