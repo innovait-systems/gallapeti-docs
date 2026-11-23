@@ -1,30 +1,112 @@
 ---
-title: Use several phones
+title: Bill on more than one phone
 sidebar_position: 3
-description: Bill on more than one phone in the same shop without clashing invoice numbers.
-keywords: [multiple phones, two counters, bill prefix, shared printer, sync]
+description: Link up to 2 counter phones to the owner's main phone. Each counter bills on its own, and all sales, returns and closings come together on the main phone — no internet needed.
+keywords: [multiple phones, two counters, counter phone, main phone, sync, combine sales, bill prefix, nearby, send by file, shared printer]
 ---
 
-# Use several phones
+# Bill on more than one phone
 
-You can install Galla Peti on several phones in one shop — for example two counters during the
-Diwali rush. Each phone keeps **its own** items, bills and reports.
+*Part of [Galla Peti Pro](galla-peti-pro.mdx).*
+
+When one phone isn't enough — a second counter, or the Diwali rush — link up to **2 counter phones**
+to the owner's phone (the **main phone**).
+
+- Each counter **bills on its own phone**, with its own bill numbers (`A2/26-27/0001`).
+- Its bills, returns and day closings **come together on the main phone**: Bills, Reports and GST
+  show the whole shop.
+- Items, prices, stock, staff PINs, shop details and the bill language are kept on the main phone
+  and **sent to the counters**.
+- The phones talk to each other **inside the shop** — over the shop's Wi-Fi when both are on it,
+  otherwise straight phone to phone. **No internet is needed** and nothing goes to a server.
 
 ## Set it up
 
-1. **Give each phone a different bill number prefix** — **Settings → Shop details → Bill number
-   prefix**: `A1` on the first phone, `A2` on the second… Bill numbers then never repeat, as GST
-   requires.
-2. **Copy your items** — on the first phone: **Items → Import / Export Excel → Export my items**.
-   Send the file to the other phone and **Import** it there.
-3. **Share a printer** — use a [Wi-Fi printer](../printing/wifi-printer.mdx); most Bluetooth printers
-   only connect to one phone at a time.
+**On the main phone** (the owner's):
 
-:::caution[Restoring a backup on another phone]
-A restored backup carries the first phone's prefix. **Change the prefix** on the new phone straight
-away.
+1. Open **Settings → Phones → Add a counter phone**.
+2. Check the name (*Counter 2*) and bill number prefix (*A2*), and tap **Add and show QR**.
+
+**On the counter phone:**
+
+1. Install Galla Peti from the Play Store.
+2. On the first screen tap **Join a main phone (extra counter)**. (Already set up? **Settings →
+   Phones → Join a main phone** — only on a phone with no bills yet.)
+3. Scan the QR code on the main phone. Allow **Nearby devices** when asked.
+
+Keep both phones close, with Galla Peti open on the main phone. The shop, items and staff come
+across in a few seconds, and the counter is ready to bill.
+
+:::caution[The QR code is the key to your shop]
+Anyone who scans it can join as that counter. Show it only to your own phones. Each QR code works
+for **one** phone.
 :::
 
-**Coming to Galla Peti Pro:** each counter bills on its own phone and all sales come together on the
-owner's phone — the phones sync with each other in the shop, no internet needed. Cloud sync from
-anywhere is planned for **Galla Peti Business**.
+## Syncing
+
+A counter phone syncs **by itself**, as long as Galla Peti is open on both phones:
+
+- **a few seconds after each bill**, void, return or day closing;
+- when Galla Peti opens;
+- every 10 minutes while it's open, to get new items, prices and stock.
+
+Each sync takes a few seconds and the phones don't stay connected, so it hardly uses any battery.
+To sync right away: **Settings → Phones → Sync now**. The screen shows when it last synced and how
+many bills are waiting.
+
+Bills are never lost if a sync fails — they wait on the counter and go next time. A bill is
+counted once on the main phone however many times it's sent.
+
+### Can't connect? Send by file
+
+If the counter can't find the main phone (different floors, permission turned off), use a file:
+
+1. Counter: **Settings → Phones → Send by file** and send it to the main phone — WhatsApp,
+   Bluetooth or Nearby Share.
+2. Main phone: **Settings → Phones → Open a file from a counter**. Its bills are saved, and a reply
+   file opens to send back.
+3. Counter: **Open the reply from the main phone**. Items, prices and stock are updated.
+
+The files are locked with your shop's key: no other phone can open or change them.
+
+## What each phone does
+
+| | Main phone | Counter phone |
+|---|---|---|
+| Make bills, returns, quotes | ✅ | ✅ |
+| Add or change items, prices, stock | ✅ | — (comes from the main phone) |
+| Staff PINs, shop details, bill language | ✅ | — (comes from the main phone) |
+| Close the day | ✅ its own cash drawer | ✅ its own cash drawer |
+| See the whole shop's bills and reports | ✅ | Only its own |
+| Void a bill | Its own bills | Its own bills |
+| Take a return | Any bill | Its own bills |
+
+- **Stock** is counted on the main phone. Counter sales reduce it at each sync.
+- **Day closing** is per cash drawer: each phone closes its own. The main phone's **Past closings**
+  shows the counters' closings with their name.
+- **Returns** on a counter are numbered in their own series (`CA2/26-27/0001`), so numbers never
+  clash.
+- **Token numbers** restart from 1 each day on each phone.
+
+## Plan
+
+The main phone needs **Galla Peti Pro** (or the 14-day free trial). Counter phones use the main
+phone's plan — no separate subscription. A counter keeps the Pro features for **7 days after its
+last sync**; sync again to continue. Billing, GST and printing always keep working.
+
+## Remove a counter
+
+**Main phone → Settings → Phones → Remove this phone.** Bills it already sent stay on the main
+phone; the counter is told to stop at its next sync. On a counter phone, **Stop syncing with the
+main phone** unlinks it (sync first, so no bills stay behind).
+
+## Without linking
+
+Phones that aren't linked each keep their own items, bills and reports. Give each a different **bill
+number prefix** (**Settings → Shop details**) so numbers never repeat, as GST requires. A restored
+backup carries the first phone's prefix — change it on the new phone straight away.
+
+**Share a printer** with a [Wi-Fi printer](../printing/wifi-printer.mdx); most Bluetooth printers
+connect to one phone at a time.
+
+Cloud sync from anywhere, more phones and a computer version are planned for **Galla Peti Business**.
