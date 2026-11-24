@@ -5,6 +5,8 @@ description: Give regular customers credit (udhaar), take part payments, record 
 keywords: [khata, udhaar, credit, customer credit, baaki, due, pending payment, part payment, reminder, statement, ledger, credit limit]
 ---
 
+import Screenshot from '@site/src/components/Screenshot';
+
 # Khata (customer credit)
 
 Khata is your udhaar book inside Galla Peti. Put all or part of a bill on a customer's khata, take
@@ -20,11 +22,13 @@ returns and payments, so it can't drift.
 2. Choose **Khata**.
 3. Pick the customer: type a name or phone number, or tap **New customer** to add one with just a
    name (the phone number is optional, but needed for WhatsApp).
-4. If they pay part now, enter it under **Paid now** and choose cash, UPI or card. The rest goes on
+4. If they pay part now, enter it under **Paid now** and choose cash or UPI. The rest goes on
    khata.
 5. Tap **Put ₹… on khata** (or **₹… paid · ₹… on khata**).
 
 The bill prints **On khata** and the customer's **Total due**, so they know what they owe.
+
+<Screenshot src="billing/khata-checkout.webp" alt="Payment with Khata chosen: the customer Lakshmi Bakery owes ₹1,250, ₹100 paid now in cash and ₹233 going on khata." />
 
 :::tip[Credit limit]
 In the customer's details you can set a **limit**. If a bill would take them past it, Galla Peti
@@ -37,8 +41,12 @@ allowed to **give khata past a limit** can.
 Tap **Khata** on Home. The top shows the total due and how many people owe you. **Owe you** lists
 them, biggest first. **All** shows everyone. Search by name or phone.
 
+<Screenshot src="billing/khata-book.webp" alt="Khata book: ₹1,970 due from 3 customers, biggest first, with Add customer at the bottom." />
+
 Tap a customer to see what they owe, since when, and every bill and payment with the balance after
 each one.
+
+<Screenshot src="billing/khata-customer.webp" alt="A customer's khata: owes ₹300 with a ₹1,000 limit, Call, Remind and Statement buttons, and the history with the balance after each entry." />
 
 ## Receive a payment
 
