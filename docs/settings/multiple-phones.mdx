@@ -80,6 +80,8 @@ The files are locked with your shop's key: no other phone can open or change the
 | See the whole shop's bills and reports | ✅ | Only its own |
 | Void a bill | Its own bills | Its own bills |
 | Take a return | Any bill | Its own bills |
+| Khata: give credit, add customers, take payments | ✅ | ✅ (balance as of the last sync) |
+| Khata history, statements | ✅ | Only its own entries |
 
 - **Stock** is counted on the main phone. Counter sales reduce it at each sync.
 - **Day closing** is per cash drawer: each phone closes its own. The main phone's **Past closings**
@@ -87,6 +89,8 @@ The files are locked with your shop's key: no other phone can open or change the
 - **Returns** on a counter are numbered in their own series (`CA2/26-27/0001`), so numbers never
   clash.
 - **Token numbers** restart from 1 each day on each phone.
+- **Khata** is kept on the main phone. Counter khata bills and payments go to it at each sync, and
+  the counter gets everyone's balance back. See [Khata](../billing/khata.mdx).
 
 ## Plan
 
