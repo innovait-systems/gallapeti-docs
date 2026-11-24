@@ -2,7 +2,7 @@
 title: Khata (customer credit)
 sidebar_position: 3.5
 description: Give regular customers credit (udhaar), take part payments, record old khata amounts, receive payments, and send reminders and statements on WhatsApp.
-keywords: [khata, udhaar, credit, customer credit, baaki, due, pending payment, part payment, reminder, statement, ledger, credit limit]
+keywords: [khata, udhaar, ageing, overdue, old dues, credit, customer credit, baaki, due, pending payment, part payment, reminder, statement, ledger, credit limit]
 ---
 
 import Screenshot from '@site/src/components/Screenshot';
@@ -81,6 +81,17 @@ A return on a khata bill takes the amount **off the khata** by default. See
 
 Both use your [bill language](../settings/bill-language.mdx).
 
+## Ageing: who has owed you longest (Growth)
+
+In **Khata**, tap **Ageing: who has owed you longest**. Every due is split into **up to 30 days**,
+**31–60 days**, **61–90 days** and **over 90 days**, counting from the bill (or old khata amount)
+it came from. Payments clear the oldest dues first.
+
+- The four boxes show how much is in each group and how many customers. Tap a box to see only
+  those customers; tap it again to see everyone.
+- The list starts with the customer whose oldest due has waited longest, so you know whom to
+  remind first. Tap a name to open their khata.
+
 ## Remove a customer
 
 Open the customer, tap the edit button and then **Remove**. Only customers who owe nothing can be
@@ -93,4 +104,8 @@ khata, add customers and take payments. The **main phone keeps the khata**: ever
 when the counter syncs.
 
 On a counter, a customer's balance is the main phone's balance **as of the last sync, plus what this
-phone did since**. The full history and statements are on the main phone.
+phone did since**. The full history, statements and ageing are on the main phone.
+
+If a counter adds a customer whose phone number is already in the main phone's khata, they become
+**one customer** at the next sync: the counter's bills and payments move to the main phone's
+customer, under the main phone's name.
