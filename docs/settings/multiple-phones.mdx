@@ -36,7 +36,9 @@ to the owner's phone (the **main phone**).
 1. Install Galla Peti from the Play Store.
 2. On the first screen tap **Join a main phone (extra counter)**. (Already set up? **Settings →
    Phones → Join a main phone** — only on a phone with no bills yet.)
-3. Scan the QR code on the main phone. Allow **Nearby devices** when asked.
+3. Scan the QR code on the main phone. Allow **Nearby devices** and **Location** when asked.
+   (Google's Nearby service needs location to find the other phone. Galla Peti never saves or sends
+   your location; "Approximate" is enough.)
 
 Keep both phones close, with Galla Peti open on the main phone. The shop, items and staff come
 across in a few seconds, and the counter is ready to bill.
@@ -60,6 +62,13 @@ many bills are waiting.
 
 Bills are never lost if a sync fails — they wait on the counter and go next time. A bill is
 counted once on the main phone however many times it's sent.
+
+### "Needs Location" or a MISSING_PERMISSION error
+
+Allow both permissions on **both phones**: phone **Settings → Apps → Galla Peti → Permissions**, set
+**Location** to *Allow only while using the app* and **Nearby devices** to *Allow*. Turn on
+**Location** and **Bluetooth** in the quick settings, then tap **Try again**. (Phones on Galla Peti
+1.5 or older show this as `8034: MISSING_PERMISSION_ACCESS_COARSE_LOCATION`; update the app.)
 
 ### Can't connect? Send by file
 
